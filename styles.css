@@ -100,6 +100,7 @@ header {
     border-radius: 5px;
     font-size: 18px;
     font-weight: 400;
+    outline: none;
 
 }
 
@@ -136,6 +137,7 @@ ul {
     cursor: pointer;
     font-size: 18px;
     font-weight: 400;
+    list-style: none;
 }
 
 .dark-mode-todo {
@@ -148,6 +150,7 @@ ul {
     cursor: pointer;
     font-size: 18px;
     font-weight: 400;
+    list-style: none;
 }
 
 .todo:nth-of-type(1),.dark-mode-todo:nth-of-type(1) {
@@ -176,7 +179,7 @@ label {
     cursor: pointer;
     margin-right: 10px;
 }
-#checkbox {
+.checkbox {
     margin-left: 15px;
 }
 input[type="checkbox"]:checked+label {
@@ -263,10 +266,13 @@ a:hover {
     display: none;
 }
 
-
+.inline-filters{
+    display: inline;
+    padding-right: 10px;
+}
 
 .dragndrop {
-    margin-top: 38px;
+    margin-top: 40px;
     min-height: 150px;
     text-align: center;
     color: var(--DarkGrayishBlue);
@@ -321,6 +327,9 @@ a:hover {
    .dragndrop{
     margin-top: 150px;
    }
+   .dragndropText{
+    margin-top: 20px;
+   }
 }
 
 @media(min-width:600px) {
@@ -358,10 +367,11 @@ a:hover {
     }
 
     .dragndropText {
-
         margin-left: 25%;
-
     }
+    .dragndrop{
+        margin-top: 150px;
+       }
 }
 
 .attribution {
