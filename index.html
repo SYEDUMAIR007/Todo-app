@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Todo app</title>
+</head>
+
+<body>
+  <main>
+
+    <header>
+      <span id="logo">Todo</span>
+      <button id="mode-toggler" class="light-mode"></button>
+    </header>
+
+    <form>
+      <div class="todoMaker">
+        <input type="checkbox" name="check" id="checkbox">
+        <label for="checkbox" id="checkbox"></label>
+        <input type="text" placeholder="Create a new todo..." id="input">
+      </div>
+    </form>
+
+
+    <div class="todoLiContainer">
+      <ul class="todoUl dragContainer">
+        <div class="todo">
+          <li>
+            <div class="filter-container">
+              <small><span id="itemCount">0</span> items left</small>
+              <ul id="inline-filter" class="filters">
+                <a href="#" class="allFilter">All</a>
+                <a href="#" class="activeFilter">Active</a>
+                <a href="#" class="completedFilter">Completed</a>
+              </ul>
+              <a id="allClear" class="filters" href="#">Clear Completed</a>
+            </div>
+          </li>
+        </div>
+      </ul>
+    </div>
+
+    <div id="filters" class="filters">
+      <a href="#" class="allFilter">All</a>
+      <a href="#" class="activeFilter">Active</a>
+      <a href="#" class="completedFilter">Completed</a>
+    </div>
+
+    <div class="dragndrop dragContainer">
+      <h6 class="dragndropText">Drag and drop to reorder list</h6>
+    </div>
+
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Syed Umair</a>.
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
