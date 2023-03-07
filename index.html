@@ -21,29 +21,28 @@
 
     <form>
       <div class="todoMaker">
-        <input type="checkbox" name="check" id="checkbox">
-        <label for="checkbox" id="checkbox"></label>
+        <input type="checkbox" name="check" id="checkbox" class="checkbox">
+        <label for="checkbox" class="checkbox"></label>
         <input type="text" placeholder="Create a new todo..." id="input">
       </div>
     </form>
 
 
     <div class="todoLiContainer">
-      <ul class="todoUl dragContainer">
-        <div class="todo">
-          <li>
+      <div class="todoUl dragContainer">
+          <div class="todo">
             <div class="filter-container">
               <small><span id="itemCount">0</span> items left</small>
               <ul id="inline-filter" class="filters">
-                <a href="#" class="allFilter">All</a>
-                <a href="#" class="activeFilter">Active</a>
-                <a href="#" class="completedFilter">Completed</a>
+                <li class="inline-filters"><a href="#" class="allFilter">All</a></li>
+                <li class="inline-filters"><a href="#" class="activeFilter">Active</a></li>
+                <li class="inline-filters"><a href="#" class="completedFilter">Completed</a></li>
               </ul>
               <a id="allClear" class="filters" href="#">Clear Completed</a>
             </div>
-          </li>
+          </div>
+    
         </div>
-      </ul>
     </div>
 
     <div id="filters" class="filters">
